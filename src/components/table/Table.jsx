@@ -11,8 +11,8 @@ const List = () => {
   const rows = [
     {
       id: 1143155,
-      product: "Acer Nitro 5",
-      img: "https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg",
+      hotel: "Hotel Taj",
+      img: "https://media.istockphoto.com/id/926704710/photo/taj-mahal-hotel-reviews-india.jpg?s=612x612&w=is&k=20&c=LVmPsaWHABTdMfaLwM8alLo-Iz7HtqT4QXEpkdof3WE=",
       customer: "John Smith",
       date: "1 March",
       amount: 785,
@@ -21,8 +21,8 @@ const List = () => {
     },
     {
       id: 2235235,
-      product: "Playstation 5",
-      img: "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+      hotel: "Lilavati",
+      img: "https://images.trvl-media.com/lodging/1000000/910000/905500/905407/076666ed_d.jpg",
       customer: "Michael Doe",
       date: "1 March",
       amount: 900,
@@ -31,8 +31,8 @@ const List = () => {
     },
     {
       id: 2342353,
-      product: "Redragon S101",
-      img: "https://m.media-amazon.com/images/I/71kr3WAj1FL._AC_UY327_FMwebp_QL65_.jpg",
+      hotel: "Hotel H",
+      img: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/103414426.jpg?k=50e4c60f5bc3e07ed6b80f839b49d4d4ccfcc9ae536e8483b9f028a72f5e63a6&o=&hp=1",
       customer: "John Smith",
       date: "1 March",
       amount: 35,
@@ -41,8 +41,8 @@ const List = () => {
     },
     {
       id: 2357741,
-      product: "Razer Blade 15",
-      img: "https://m.media-amazon.com/images/I/71wF7YDIQkL._AC_UY327_FMwebp_QL65_.jpg",
+      hotel: "Hotel SunLight",
+      img: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/320656905.jpg?k=d1fd99528d84330d15fbfe4004e70bc2a265521a50046015ee6225c3b5949439&o=&hp=1",
       customer: "Jane Smith",
       date: "1 March",
       amount: 920,
@@ -51,8 +51,8 @@ const List = () => {
     },
     {
       id: 2342355,
-      product: "ASUS ROG Strix",
-      img: "https://m.media-amazon.com/images/I/81hH5vK-MCL._AC_UY327_FMwebp_QL65_.jpg",
+      hotel: "Hotel Mountain View",
+      img: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/465520517.jpg?k=db77d8eae5d504b7c4f433a5554d8fa08016e7a66cc487b8a2cac7156e1c4c26&o=&hp=1",
       customer: "Harold Carol",
       date: "1 March",
       amount: 2000,
@@ -66,7 +66,7 @@ const List = () => {
         <TableHead>
           <TableRow>
             <TableCell className="tableCell">Tracking ID</TableCell>
-            <TableCell className="tableCell">Product</TableCell>
+            <TableCell className="tableCell">Hotel</TableCell>
             <TableCell className="tableCell">Customer</TableCell>
             <TableCell className="tableCell">Date</TableCell>
             <TableCell className="tableCell">Amount</TableCell>
@@ -81,7 +81,7 @@ const List = () => {
               <TableCell className="tableCell">
                 <div className="cellWrapper">
                   <img src={row.img} alt="" className="image" />
-                  {row.product}
+                  {row.hotel}
                 </div>
               </TableCell>
               <TableCell className="tableCell">{row.customer}</TableCell>
